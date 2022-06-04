@@ -19,8 +19,9 @@ body{
 .logo{
 	position: fixed;
 	z-index: 9999;
- 	left: 10px;
+ 	left: 5px;
   top: 0px;
+  height: 80px;
 }
 
 nav{
@@ -115,15 +116,15 @@ section{
 	overflow-y: auto;
 }
 
-.main{
+/*.main{
 	position: absolute;
 	text-align: center;
-	top: 100px;
+	top: 0px;
 }
 
 img .university{
 	width: 100%;
-	height: 400px;
+	height: 450px;
 }
 
 .title{
@@ -144,6 +145,49 @@ img .university{
 	font-size: 20px;
 	font-style: italic;
 	margin-bottom: 10px;
+}*/
+
+
+.main{
+	position: absolute;
+	text-align: center;
+	top: 0px;
+}
+
+.page{
+	position: relative;
+  	color: white;
+  	text-align: center;
+}
+
+img .university{
+	width: 100%;
+	height: 450px;
+}
+
+.title{
+	position: absolute;
+	padding: 20px;
+	font-size:30px;
+	color:#114105;
+	left: 30px;
+	top: 150px;
+}
+
+.title:hover{
+	transform: scale(1.2);
+	color: #8ebf42;
+}
+
+.info{
+	position: absolute;
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 20px;
+	font-style: italic;
+	left: 80px;
+	top: 200px;
+	width: 400px;
 }
 
 .now{
@@ -157,6 +201,13 @@ img .university{
   	position: absolute;
   	left: 10%;
   	right: 10%;
+  	margin-bottom: 20px;
+}
+.topic{
+	padding: 20px;
+	font-size:30px;
+	color:#114105;
+	text-align: center;
 }
 
 .motto{
@@ -242,7 +293,7 @@ article{
 .break{
 	position: absolute;
 	text-align: center;
-	top: 2100px;
+	top: 1700px;
 }
 
 .function{
@@ -293,6 +344,28 @@ form{
 	font-size: 20px;
 	overflow-x: hiden;
 	overflow-y: auto;
+}
+
+form .log{
+	position: absolute;
+	padding: 20px;
+	top: 200px;
+	left: 30%;
+	right: 30%;
+	text-align: center;
+	background-color: #EAF3E8;
+	width: 400px;
+	height: 300px;
+	border-radius: 5px;
+	box-shadow: 0 0 30px 0 #8ebf42;
+	line-height: 30px;
+	font-size: 20px;
+	overflow-x: hiden;
+	overflow-y: auto;
+}
+
+.head{
+	padding: 10px;
 }
 
 input, select, textarea {
@@ -357,7 +430,7 @@ button:hover {
       background: #82b534;
 }
 
-footer{
+/*footer{
 	position: fixed;
 	background-color: rgb(213, 238, 207);
 	height: 100px;
@@ -425,6 +498,127 @@ footer:after {
 	position: fixed;
 	right:30px;
 	padding: 20px;
+}*/
+
+footer{
+ 	 position: fixed;
+ 	background-color:rgb(213, 238, 207);
+ 	color:#4b4c4d;
+ 	height: 200px;
+	width: 100%;
+	bottom: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+.down .logobio .icons .aside {
+  width: 33.33%;
+  padding: 10px;
+  height: 100px;
+}
+
+.down{
+	width: 400px;
+	height: 150px ;
+	font-size: 35px;
+	color: #114105;
+	margin-top: 10px;
+	left: 20px;
+}
+
+.aside{
+	padding: 30px 25px;
+	width: 400px;
+	height: 150px ;
+	font-size: 35px;
+	color: #114105;
+}
+
+.logobio{
+	padding: 30px 25px;
+}
+
+.logodown{
+  height: 80px;
+}
+
+.icons{
+	align-content: center;
+	padding: 60px 30px 0px;
+}
+
+
+footer h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:25px;
+}
+
+footer ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:20px;
+  margin-bottom:0;
+}
+
+footer ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+footer ul a:hover {
+  opacity:1;
+}
+
+footer .item.icon {
+  text-align:right;
+}
+
+@media (max-width:767px) {
+  footer .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .item.icon {
+    text-align:center;
+  }
+}
+
+footer .item.icon > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+footer .item.icon > a:hover {
+  opacity:0.9;
+}
+
+@media (max-width:991px) {
+  footer .item.icon > a {
+    margin-top:40px;
+  }
+}
+
+@media (max-width:767px) {
+  footer .item.icon > a {
+    margin-top:10px;
+  }
 }
 
 @media screen and (max-width: 900px) {
